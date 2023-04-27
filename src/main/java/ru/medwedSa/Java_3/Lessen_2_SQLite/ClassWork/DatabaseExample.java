@@ -1,4 +1,4 @@
-package ru.medwedSa.Java_3.Lessen_2.ClassWork;
+package ru.medwedSa.Java_3.Lessen_2_SQLite.ClassWork;
 
 
 import java.sql.*;
