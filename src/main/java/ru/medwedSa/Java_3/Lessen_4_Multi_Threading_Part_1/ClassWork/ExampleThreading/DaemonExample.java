@@ -1,4 +1,4 @@
-package ru.medwedSa.Java_3.Lessen_4_Multi_Threading_Part_1.ExampleThreading;
+package ru.medwedSa.Java_3.Lessen_4_Multi_Threading_Part_1.ClassWork.ExampleThreading;
 
 /**
  * Класс для наглядной работы потоков "демонов".

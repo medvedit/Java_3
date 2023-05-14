@@ -1,7 +1,5 @@
-package ru.medwedSa.Java_3.Lessen_4_Multi_Threading_Part_1.ExampleThreading;
+package ru.medwedSa.Java_3.Lessen_4_Multi_Threading_Part_1.ClassWork.ExampleThreading;
 
-import java.util.Collections;
-import java.util.List;
 import java.util.concurrent.*;
 
 public class MyltiThreadingExample_java3 {
