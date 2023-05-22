@@ -4,19 +4,16 @@ import java.util.ArrayList;
 import java.util.Arrays;
 
 public class MainClass {
-    public static final int CARS_COUNT = 6;
     public static void main(String[] args) {
-        System.out.println("ВАЖНОЕ ОБЪЯВЛЕНИЕ >>> Подготовка!!!");
-        Race race = new Race(new Road(60), new Tunnel(), new Road(40));
-        Car[] cars = new Car[CARS_COUNT];
-        for (int i = 0; i < cars.length; i++) {
-            cars[i] = new Car(race, 20 + (int) (Math.random() * 10));
-        }
-        for (int i = 0; i < cars.length; i++) {
-            new Thread(cars[i]).start();
-        }
-        System.out.println("ВАЖНОЕ ОБЪЯВЛЕНИЕ >>> Гонка началась!!!");
-        System.out.println("ВАЖНОЕ ОБЪЯВЛЕНИЕ >>> Гонка закончилась!!!");
+
+        Race race = new Race(4,
+                new Road(60),
+                new Tunnel(80, 2),
+                new Road(40),
+                new Tunnel(30, 2),
+                new Road(100),
+                new Road(20));
+        race.makeRace();
     }
 }
 
