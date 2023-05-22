@@ -44,7 +44,7 @@ public class Race {
 
     public synchronized void finish(Car car) {
         if (finishCount++ == 0) {
-            System.out.printf("У еас есть победитель: %s\n", car.getName());
+            System.out.printf("\n<<<<<<<< У еас есть победитель: %s >>>>>>>>\n\n", car.getName());
         } else {
             System.out.printf("%s приехал %s_м\n", car.getName(), finishCount);
         }
