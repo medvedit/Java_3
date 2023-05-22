@@ -24,7 +24,6 @@ public class MyltiThreadingExample_2_java3 {
 //        CopyOnWriteArraySetExample();
 //        hashtableExample();
 //        collectionsExample();
-
     }
 
     private static void collectionsExample() {
