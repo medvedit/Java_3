@@ -1,0 +1,11 @@
+
+TRACE 2023-05-23 16:31:14 [main] ru.medwedSa.Java_3.Lessen_6_log_test.ClassWork.LoggingExample (LoggingExample.java:10) - Trace log
+DEBUG 2023-05-23 16:31:14 [main] ru.medwedSa.Java_3.Lessen_6_log_test.ClassWork.LoggingExample (LoggingExample.java:11) - Debug log
+INFO  2023-05-23 16:31:14 [main] ru.medwedSa.Java_3.Lessen_6_log_test.ClassWork.LoggingExample (LoggingExample.java:12) - Info log
+WARN  2023-05-23 16:31:14 [main] ru.medwedSa.Java_3.Lessen_6_log_test.ClassWork.LoggingExample (LoggingExample.java:13) - Warn log
+ERROR 2023-05-23 16:31:14 [main] ru.medwedSa.Java_3.Lessen_6_log_test.ClassWork.LoggingExample (LoggingExample.java:14) - Error log
+FATAL 2023-05-23 16:31:14 [main] ru.medwedSa.Java_3.Lessen_6_log_test.ClassWork.LoggingExample (LoggingExample.java:15) - Fatal log
+ERROR 2023-05-23 16:31:33 [main] ru.medwedSa.Java_3.Lessen_6_log_test.ClassWork.Method (Method.java:38) - Throwing
+java.lang.RuntimeException: 4 not found
+	at ru.medwedSa.Java_3.Lessen_6_log_test.ClassWork.Method.copyArr(Method.java:38) [classes/:?]
+	at ru.medwedSa.Java_3.Lessen_6_log_test.ClassWork.Method.main(Method.java:28) [classes/:?]
