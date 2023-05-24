@@ -33,7 +33,7 @@
             <AppenderRef ref="FILE2"/>
             <AppenderRef ref="STDOUT"/>
         </Logger>
-        <Logger name="ru.medwedSa.Java_3.Lessen_6_log_test.ClassWork.LoggingExample" level="trace" additivity="false">
+        <Logger name="ru.medwedSa.Java_3.Lessen_6_log_test.ClassWork.LoggingLog4jExample" level="trace" additivity="false">
             <AppenderRef ref="FILE2"/> <!--Прописал в каком именно файле отслеживать логи. С какого уровня и куда
                                        их записывать. -->
             <AppenderRef ref="STDOUT"/>
