@@ -1,0 +1,92 @@
+TRACE 2023-05-23 17:35:41 [main] ru.medwedSa.Java_3.Lessen_6_log_test.ClassWork.LoggingLog4jExample (LoggingExample.java:14) - Trace log
+DEBUG 2023-05-23 17:35:41 [main] ru.medwedSa.Java_3.Lessen_6_log_test.ClassWork.LoggingLog4jExample (LoggingExample.java:15) - Debug log
+INFO  2023-05-23 17:35:41 [main] ru.medwedSa.Java_3.Lessen_6_log_test.ClassWork.LoggingLog4jExample (LoggingExample.java:16) - Info log
+WARN  2023-05-23 17:35:41 [main] ru.medwedSa.Java_3.Lessen_6_log_test.ClassWork.LoggingLog4jExample (LoggingExample.java:17) - Warn log
+ERROR 2023-05-23 17:35:41 [main] ru.medwedSa.Java_3.Lessen_6_log_test.ClassWork.LoggingLog4jExample (LoggingExample.java:18) - Error log
+FATAL 2023-05-23 17:35:41 [main] ru.medwedSa.Java_3.Lessen_6_log_test.ClassWork.LoggingLog4jExample (LoggingExample.java:19) - Fatal log
+TRACE 2023-05-23 17:38:16 [main] ru.medwedSa.Java_3.Lessen_6_log_test.ClassWork.LoggingLog4jExample (LoggingExample.java:14) - Trace log
+DEBUG 2023-05-23 17:38:16 [main] ru.medwedSa.Java_3.Lessen_6_log_test.ClassWork.LoggingLog4jExample (LoggingExample.java:15) - Debug log
+INFO  2023-05-23 17:38:16 [main] ru.medwedSa.Java_3.Lessen_6_log_test.ClassWork.LoggingLog4jExample (LoggingExample.java:16) - Info log
+WARN  2023-05-23 17:38:16 [main] ru.medwedSa.Java_3.Lessen_6_log_test.ClassWork.LoggingLog4jExample (LoggingExample.java:17) - Warn log
+ERROR 2023-05-23 17:38:16 [main] ru.medwedSa.Java_3.Lessen_6_log_test.ClassWork.LoggingLog4jExample (LoggingExample.java:18) - Error log
+FATAL 2023-05-23 17:38:16 [main] ru.medwedSa.Java_3.Lessen_6_log_test.ClassWork.LoggingLog4jExample (LoggingExample.java:19) - Fatal log
+ERROR 2023-05-23 17:51:18 [main] ru.medwedSa.Java_3.Lessen_6_log_test.HomeWork.LoggingLog4j (Method.java:38) - Throwing
+java.lang.RuntimeException: 4 not found
+	at ru.medwedSa.Java_3.Lessen_6_log_test.HomeWork.LoggingLog4j.copyArr(Method.java:38) [classes/:?]
+	at ru.medwedSa.Java_3.Lessen_6_log_test.HomeWork.LoggingLog4j.main(Method.java:28) [classes/:?]
+ERROR 2023-05-23 17:56:20 [main] ru.medwedSa.Java_3.Lessen_6_log_test.HomeWork.LoggingLog4j (Method.java:38) - Throwing
+java.lang.RuntimeException: 4 not found
+	at ru.medwedSa.Java_3.Lessen_6_log_test.HomeWork.LoggingLog4j.copyArr(Method.java:38) [classes/:?]
+	at ru.medwedSa.Java_3.Lessen_6_log_test.HomeWork.LoggingLog4j.main(Method.java:28) [classes/:?]
+ERROR 2023-05-23 17:56:33 [main] ru.medwedSa.Java_3.Lessen_6_log_test.HomeWork.LoggingLog4j (Method.java:38) - Throwing
+java.lang.RuntimeException: 4 not found
+	at ru.medwedSa.Java_3.Lessen_6_log_test.HomeWork.LoggingLog4j.copyArr(Method.java:38) [classes/:?]
+	at ru.medwedSa.Java_3.Lessen_6_log_test.HomeWork.LoggingLog4j.main(Method.java:28) [classes/:?]
+ERROR 2023-05-23 20:07:22 [main] ru.medwedSa.Java_3.Lessen_6_log_test.ClassWork.LoggingLog4jExample (LoggingExample.java:18) - java.lang.Exception: Тут ошибка
+ERROR 2023-05-23 20:08:02 [main] ru.medwedSa.Java_3.Lessen_6_log_test.ClassWork.LoggingLog4jExample (LoggingExample.java:18) - java.lang.Exception: Тут ошибка
+ERROR 2023-05-23 20:09:26 [main] ru.medwedSa.Java_3.Lessen_6_log_test.ClassWork.LoggingLog4jExample (LoggingExample.java:18) - java.lang.Exception: Тут ошибка
+ERROR 2023-05-23 20:09:26 [main] ru.medwedSa.Java_3.Lessen_6_log_test.ClassWork.LoggingLog4jExample (LoggingExample.java:19) - Throwing
+java.lang.Exception: Тут ошибка
+	at ru.medwedSa.Java_3.Lessen_6_log_test.ClassWork.LoggingLog4jExample.main(LoggingExample.java:16) [classes/:?]
+INFO  2023-05-23 20:30:25 [main] ru.medwedSa.Java_3.Lessen_6_log_test.ClassWork.LoggingLog4jExample (LoggingExample.java:22) - Info Данные на 23 мая log 123
+INFO  2023-05-23 20:30:55 [main] ru.medwedSa.Java_3.Lessen_6_log_test.ClassWork.LoggingLog4jExample (LoggingExample.java:22) - Info Данные на 23 мая : log 123
+INFO  2023-05-23 20:31:41 [main] ru.medwedSa.Java_3.Lessen_6_log_test.ClassWork.LoggingLog4jExample (LoggingExample.java: string 22) - Info Данные на 23 мая : log 123
+INFO  2023-05-23 20:32:33 [main] ru.medwedSa.Java_3.Lessen_6_log_test.ClassWork.LoggingLog4jExample (LoggingExample.java: string 22) - Info Данные на 23 мая : log 123
+INFO  2023-05-23 20:32:51 [main] ru.medwedSa.Java_3.Lessen_6_log_test.ClassWork.LoggingLog4jExample (LoggingExample.java:string 22) - Info Данные на 23 мая : log 123
+INFO  2023-05-23 20:56:45 [main] ru.medwedSa.Java_3.Lessen_6_log_test.ClassWork.LoggingLog4jExample (LoggingExample.java:string 27) - Info Данные на 23 мая : log 123
+INFO  2023-05-23 20:56:45 [main] ru.medwedSa.Java_3.Lessen_6_log_test.ClassWork.LoggingLog4jExample (LoggingExample.java:string 28) - Thread log Thread[#1,main,5,main]
+INFO  2023-05-23 20:57:13 [main] ru.medwedSa.Java_3.Lessen_6_log_test.ClassWork.LoggingLog4jExample (LoggingExample.java:string 27) - Info Данные на 23 мая : log 123
+INFO  2023-05-23 20:57:13 [main] ru.medwedSa.Java_3.Lessen_6_log_test.ClassWork.LoggingLog4jExample (LoggingExample.java:string 28) - Thread log Thread[#1,main,5,main]
+INFO  2023-05-23 20:57:13 [main] ru.medwedSa.Java_3.Lessen_6_log_test.ClassWork.LoggingLog4jExample (LoggingExample.java:string 29) - Thread log Thread[#1,main,5,main]
+INFO  2023-05-23 20:57:31 [main] ru.medwedSa.Java_3.Lessen_6_log_test.ClassWork.LoggingLog4jExample (LoggingExample.java:string 27) - Info Данные на 23 мая : log 123
+INFO  2023-05-23 20:57:32 [main] ru.medwedSa.Java_3.Lessen_6_log_test.ClassWork.LoggingLog4jExample (LoggingExample.java:string 28) - Thread log Thread[#1,main,5,main]
+ERROR 2023-05-23 20:57:32 [main] ru.medwedSa.Java_3.Lessen_6_log_test.ClassWork.LoggingLog4jExample (LoggingExample.java:string 29) - Thread log Thread[#1,main,5,main]
+INFO  2023-05-23 20:59:56 [main] ru.medwedSa.Java_3.Lessen_6_log_test.ClassWork.LoggingLog4jExample (LoggingExample.java:string 27) - Info Данные на 23 мая : log 123
+INFO  2023-05-23 20:59:56 [main] ru.medwedSa.Java_3.Lessen_6_log_test.ClassWork.LoggingLog4jExample (LoggingExample.java:string 28) - Thread log Thread[#1,main,5,main]
+INFO  2023-05-23 20:59:56 [Thread-0] ru.medwedSa.Java_3.Lessen_6_log_test.ClassWork.LoggingLog4jExample (LoggingExample.java:string 29) - Информация об этом Thread
+ERROR 2023-05-23 21:39:12 [main] ru.medwedSa.Java_3.Lessen_6_log_test.ClassWork.LoggingExampleWithSlf4jAndLombok (LoggingExampleWithSlf4jAndLombok.java:string 18) - Error log
+ERROR 2023-05-23 21:39:12 [main] ru.medwedSa.Java_3.Lessen_6_log_test.ClassWork.LoggingExampleWithSlf4jAndLombok (LoggingExampleWithSlf4jAndLombok.java:string 25) - произошла ошибка
+java.lang.RuntimeException: Тут проблемка...
+	at ru.medwedSa.Java_3.Lessen_6_log_test.ClassWork.LoggingExampleWithSlf4jAndLombok.main(LoggingExampleWithSlf4jAndLombok.java:23) [classes/:?]
+ERROR 2023-05-23 21:42:58 [main] ru.medwedSa.Java_3.Lessen_6_log_test.ClassWork.LoggingExampleWithSlf4jAndLombok (LoggingExampleWithSlf4jAndLombok.java:string 18) - Error log
+ERROR 2023-05-23 21:42:58 [main] ru.medwedSa.Java_3.Lessen_6_log_test.ClassWork.LoggingExampleWithSlf4jAndLombok (LoggingExampleWithSlf4jAndLombok.java:string 25) - произошла ошибка
+java.lang.RuntimeException: Тут проблемка...
+	at ru.medwedSa.Java_3.Lessen_6_log_test.ClassWork.LoggingExampleWithSlf4jAndLombok.main(LoggingExampleWithSlf4jAndLombok.java:23) [classes/:?]
+INFO  2023-05-23 21:46:19 [main] ru.medwedSa.Java_3.Lessen_6_log_test.ClassWork.LoggingExampleWithSlf4jAndLombok (LoggingExampleWithSlf4jAndLombok.java:string 12) - Number 0.0324 and String Привет!
+TRACE 2023-05-23 21:46:19 [main] ru.medwedSa.Java_3.Lessen_6_log_test.ClassWork.LoggingExampleWithSlf4jAndLombok (LoggingExampleWithSlf4jAndLombok.java:string 14) - Trace log
+DEBUG 2023-05-23 21:46:19 [main] ru.medwedSa.Java_3.Lessen_6_log_test.ClassWork.LoggingExampleWithSlf4jAndLombok (LoggingExampleWithSlf4jAndLombok.java:string 15) - Debug log
+INFO  2023-05-23 21:46:19 [main] ru.medwedSa.Java_3.Lessen_6_log_test.ClassWork.LoggingExampleWithSlf4jAndLombok (LoggingExampleWithSlf4jAndLombok.java:string 16) - Info log
+WARN  2023-05-23 21:46:19 [main] ru.medwedSa.Java_3.Lessen_6_log_test.ClassWork.LoggingExampleWithSlf4jAndLombok (LoggingExampleWithSlf4jAndLombok.java:string 17) - Warn log
+ERROR 2023-05-23 21:46:19 [main] ru.medwedSa.Java_3.Lessen_6_log_test.ClassWork.LoggingExampleWithSlf4jAndLombok (LoggingExampleWithSlf4jAndLombok.java:string 18) - Error log
+INFO  2023-05-23 21:46:19 [Thread-0] ru.medwedSa.Java_3.Lessen_6_log_test.ClassWork.LoggingExampleWithSlf4jAndLombok (LoggingExampleWithSlf4jAndLombok.java:string 20) - Этот поток
+ERROR 2023-05-23 21:46:19 [main] ru.medwedSa.Java_3.Lessen_6_log_test.ClassWork.LoggingExampleWithSlf4jAndLombok (LoggingExampleWithSlf4jAndLombok.java:string 25) - произошла ошибка
+java.lang.RuntimeException: Тут проблемка...
+	at ru.medwedSa.Java_3.Lessen_6_log_test.ClassWork.LoggingExampleWithSlf4jAndLombok.main(LoggingExampleWithSlf4jAndLombok.java:23) [classes/:?]
+ERROR 2023-05-23 21:46:51 [main] ru.medwedSa.Java_3.Lessen_6_log_test.ClassWork.LoggingExampleWithSlf4jAndLombok (LoggingExampleWithSlf4jAndLombok.java:string 18) - Error log
+ERROR 2023-05-23 21:46:51 [main] ru.medwedSa.Java_3.Lessen_6_log_test.ClassWork.LoggingExampleWithSlf4jAndLombok (LoggingExampleWithSlf4jAndLombok.java:string 25) - произошла ошибка
+java.lang.RuntimeException: Тут проблемка...
+	at ru.medwedSa.Java_3.Lessen_6_log_test.ClassWork.LoggingExampleWithSlf4jAndLombok.main(LoggingExampleWithSlf4jAndLombok.java:23) [classes/:?]
+INFO  2023-05-23 21:47:26 [main] ru.medwedSa.Java_3.Lessen_6_log_test.ClassWork.LoggingExampleWithSlf4jAndLombok (LoggingExampleWithSlf4jAndLombok.java:string 12) - Number 0.0324 and String Привет!
+TRACE 2023-05-23 21:47:26 [main] ru.medwedSa.Java_3.Lessen_6_log_test.ClassWork.LoggingExampleWithSlf4jAndLombok (LoggingExampleWithSlf4jAndLombok.java:string 14) - Trace log
+DEBUG 2023-05-23 21:47:26 [main] ru.medwedSa.Java_3.Lessen_6_log_test.ClassWork.LoggingExampleWithSlf4jAndLombok (LoggingExampleWithSlf4jAndLombok.java:string 15) - Debug log
+INFO  2023-05-23 21:47:26 [main] ru.medwedSa.Java_3.Lessen_6_log_test.ClassWork.LoggingExampleWithSlf4jAndLombok (LoggingExampleWithSlf4jAndLombok.java:string 16) - Info log
+WARN  2023-05-23 21:47:26 [main] ru.medwedSa.Java_3.Lessen_6_log_test.ClassWork.LoggingExampleWithSlf4jAndLombok (LoggingExampleWithSlf4jAndLombok.java:string 17) - Warn log
+ERROR 2023-05-23 21:47:26 [main] ru.medwedSa.Java_3.Lessen_6_log_test.ClassWork.LoggingExampleWithSlf4jAndLombok (LoggingExampleWithSlf4jAndLombok.java:string 18) - Error log
+INFO  2023-05-23 21:47:26 [Thread-0] ru.medwedSa.Java_3.Lessen_6_log_test.ClassWork.LoggingExampleWithSlf4jAndLombok (LoggingExampleWithSlf4jAndLombok.java:string 20) - Этот поток
+ERROR 2023-05-23 21:47:26 [main] ru.medwedSa.Java_3.Lessen_6_log_test.ClassWork.LoggingExampleWithSlf4jAndLombok (LoggingExampleWithSlf4jAndLombok.java:string 25) - произошла ошибка
+java.lang.RuntimeException: Тут проблемка...
+	at ru.medwedSa.Java_3.Lessen_6_log_test.ClassWork.LoggingExampleWithSlf4jAndLombok.main(LoggingExampleWithSlf4jAndLombok.java:23) [classes/:?]
+INFO  2023-05-23 21:49:05 [main] ru.medwedSa.Java_3.Lessen_6_log_test.ClassWork.LoggingExampleWithSlf4jAndLombok (LoggingExampleWithSlf4jAndLombok.java:string 12) - Number 0.0324 and String Привет!
+TRACE 2023-05-23 21:49:05 [main] ru.medwedSa.Java_3.Lessen_6_log_test.ClassWork.LoggingExampleWithSlf4jAndLombok (LoggingExampleWithSlf4jAndLombok.java:string 14) - Trace log
+DEBUG 2023-05-23 21:49:05 [main] ru.medwedSa.Java_3.Lessen_6_log_test.ClassWork.LoggingExampleWithSlf4jAndLombok (LoggingExampleWithSlf4jAndLombok.java:string 15) - Debug log
+INFO  2023-05-23 21:49:05 [main] ru.medwedSa.Java_3.Lessen_6_log_test.ClassWork.LoggingExampleWithSlf4jAndLombok (LoggingExampleWithSlf4jAndLombok.java:string 16) - Info log
+WARN  2023-05-23 21:49:05 [main] ru.medwedSa.Java_3.Lessen_6_log_test.ClassWork.LoggingExampleWithSlf4jAndLombok (LoggingExampleWithSlf4jAndLombok.java:string 17) - Warn log
+ERROR 2023-05-23 21:49:05 [main] ru.medwedSa.Java_3.Lessen_6_log_test.ClassWork.LoggingExampleWithSlf4jAndLombok (LoggingExampleWithSlf4jAndLombok.java:string 18) - Error log
+INFO  2023-05-23 21:49:05 [Thread-0] ru.medwedSa.Java_3.Lessen_6_log_test.ClassWork.LoggingExampleWithSlf4jAndLombok (LoggingExampleWithSlf4jAndLombok.java:string 20) - Этот поток
+ERROR 2023-05-23 21:49:05 [main] ru.medwedSa.Java_3.Lessen_6_log_test.ClassWork.LoggingExampleWithSlf4jAndLombok (LoggingExampleWithSlf4jAndLombok.java:string 25) - произошла ошибка
+java.lang.RuntimeException: Тут проблемка...
+	at ru.medwedSa.Java_3.Lessen_6_log_test.ClassWork.LoggingExampleWithSlf4jAndLombok.main(LoggingExampleWithSlf4jAndLombok.java:23) [classes/:?]
+ERROR 2023-05-23 22:46:24 [main] ru.medwedSa.Java_3.Lessen_6_log_test.HomeWork.LoggingLog4j (loggingExample2.java:string 38) - Throwing
+java.lang.RuntimeException: 4 not found
+	at ru.medwedSa.Java_3.Lessen_6_log_test.HomeWork.LoggingLog4j.copyArr(loggingExample2.java:38) [classes/:?]
+	at ru.medwedSa.Java_3.Lessen_6_log_test.HomeWork.LoggingLog4j.main(loggingExample2.java:28) [classes/:?]
