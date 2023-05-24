@@ -11,18 +11,40 @@
         </File>
 
         <File name="FILE2" fileName="${basePath}/logfile2.log" append="true">
-            <PatternLayout pattern="%-5p %d{yyyy-MM-dd HH:mm:ss} [%t] %C (%F:%L) - %m%n" />
+            <PatternLayout pattern="%-5p %d{yyyy-MM-dd HH:mm:ss} [%t] %C (%F:string %L) - %m%n" />
+<!--            Описание как прописать паттерны Java_3 Урок 6 -> 48 минута -->
         </File>
 
         <Console name="STDOUT" target="SYSTEM_OUT">
-            <PatternLayout pattern="%-5p %d{yyyy-MM-dd | HH:mm:ss:msss} blah blah [%t] ____ (%F:%L) - %m%n" />
+            <PatternLayout pattern="%-5p %d{yyyy-MM-dd | HH:mm:ss:msss} blah blah [%t] ____ (%F:string %L) - %m%n" />
         </Console>
     </Appenders>
 
     <Loggers>
-        <Root level="trace">
+        <!--trace << debug << info << warn << error << fatal - все уровни логирования. -->
+        <Root level="error"> <!--Можно прописать с какого уровня будут интересовать логи. Если прописать warn
+         то логи будут выводиться warn и error и fatal-->
             <AppenderRef ref="FILE1"/>
             <AppenderRef ref="STDOUT" />
         </Root>
+        <Logger name="super_logger" level="info" additivity="false"> <!--Прописал имя super_logger. И если
+        в файле LoggingExample пропишу это имя в getLogger() при создании переменной log, то логирование
+        будет производиться именно по настройкам этого Logger, а Root будет не затронут и только с уровня info-->
+            <AppenderRef ref="FILE2"/>
+            <AppenderRef ref="STDOUT"/>
+        </Logger>
+        <Logger name="ru.medwedSa.Java_3.Lessen_6_log_test.ClassWork.LoggingExample" level="trace" additivity="false">
+            <AppenderRef ref="FILE2"/> <!--Прописал в каком именно файле отслеживать логи. С какого уровня и куда
+                                       их записывать. -->
+            <AppenderRef ref="STDOUT"/>
+        </Logger>
+        <Logger name="ru.medwedSa.Java_3.Lessen_6_log_test" level="error" additivity="false">
+            <AppenderRef ref="FILE2"/>
+            <AppenderRef ref="STDOUT"/> <!--Прописал, что хочу лоцировать все файлы в Лекции_6-->
+        </Logger>
+        <Logger name="ru.medwedSa.Java_3.Lessen_6_log_test.ClassWork.LoggingExampleWithSlf4jAndLombok" level="trace" additivity="false">
+            <AppenderRef ref="FILE2"/>
+            <AppenderRef ref="STDOUT"/>
+        </Logger>
     </Loggers>
 </Configuration>
