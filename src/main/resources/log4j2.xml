@@ -38,10 +38,13 @@
                                        их записывать. -->
             <AppenderRef ref="STDOUT"/>
         </Logger>
-        <Logger name="ru.medwedSa.Java_3.Lessen_6_log_test" level="error" additivity="false">
-            <AppenderRef ref="FILE2"/>
-            <AppenderRef ref="STDOUT"/> <!--Прописал, что хочу лоцировать все файлы в Лекции_6-->
+        <Logger name="ru.medwedSa.Java_3.Lessen_6_log_test.HomeWork.ArrayCopyUpToFirstDigitFour" level="trace" additivity="false">
+            <AppenderRef ref="STDOUT"/>
         </Logger>
+<!--        <Logger name="ru.medwedSa.Java_3.Lessen_6_log_test" level="error" additivity="false">-->
+<!--            <AppenderRef ref="FILE2"/>-->
+<!--            <AppenderRef ref="STDOUT"/> &lt;!&ndash;Прописал, что хочу лоцировать все файлы в Лекции_6&ndash;&gt;-->
+<!--        </Logger>-->
         <Logger name="ru.medwedSa.Java_3.Lessen_6_log_test.ClassWork.LoggingExampleWithSlf4jAndLombok" level="trace" additivity="false">
             <AppenderRef ref="FILE2"/>
             <AppenderRef ref="STDOUT"/>
