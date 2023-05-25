@@ -25,5 +25,6 @@ class ArrayIntSumTest {
     void arraySum(int[] array, int result) {
         ArrayIntSum calculator = new ArrayIntSum();
         assertEquals(result, calculator.arraySum(array));
+
     }
 }
