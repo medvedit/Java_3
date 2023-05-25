@@ -90,3 +90,7 @@ ERROR 2023-05-23 22:46:24 [main] ru.medwedSa.Java_3.Lessen_6_log_test.HomeWork.L
 java.lang.RuntimeException: 4 not found
 	at ru.medwedSa.Java_3.Lessen_6_log_test.HomeWork.LoggingLog4j.copyArr(loggingExample2.java:38) [classes/:?]
 	at ru.medwedSa.Java_3.Lessen_6_log_test.HomeWork.LoggingLog4j.main(loggingExample2.java:28) [classes/:?]
+ERROR 2023-05-25 09:28:31 [main] ru.medwedSa.Java_3.Lessen_6_log_test.HomeWork.LoggingLog4j (LoggingLog4j.java:string 34) - Throwing
+java.lang.RuntimeException: 4 not found
+	at ru.medwedSa.Java_3.Lessen_6_log_test.HomeWork.LoggingLog4j.copyArr(LoggingLog4j.java:34) [classes/:?]
+	at ru.medwedSa.Java_3.Lessen_6_log_test.HomeWork.LoggingLog4j.main(LoggingLog4j.java:24) [classes/:?]
