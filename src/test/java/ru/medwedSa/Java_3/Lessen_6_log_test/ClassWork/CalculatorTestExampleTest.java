@@ -138,6 +138,7 @@ class CalculatorTestExampleTest {
     @ParameterizedTest
     @CsvFileSource(files = {"test_file/test1.csv", "test_file/test2.csv"}) /* В этом примере в параметр аннотации
                                          @CsvFileSource передаются пути к файлам с данными которые нужно проверить.*/
+
     void massAddTest4(int result, int a, int b) {
         assertEquals(result, calculator.add(a, b));
     }
