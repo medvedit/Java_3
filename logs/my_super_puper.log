@@ -1,2 +1,6 @@
 ERROR 2023-05-23 17:37:06 [main] ru.medwedSa.Java_3.Lessen_6_log_test.ClassWork.LoggingLog4jExample (LoggingExample.java:18) - Error log
 FATAL 2023-05-23 17:37:06 [main] ru.medwedSa.Java_3.Lessen_6_log_test.ClassWork.LoggingLog4jExample (LoggingExample.java:19) - Fatal log
+ERROR 2023-05-25 14:08:03 [main] ru.medwedSa.Java_3.Lessen_6_log_test.HomeWork.ArrayCopyUpToFirstDigitFour (ArrayCopyUpToFirstDigitFour.java:19) - Throwing
+java.lang.RuntimeException: В этом массиве нет цифры 4
+	at ru.medwedSa.Java_3.Lessen_6_log_test.HomeWork.ArrayCopyUpToFirstDigitFour.newArray(ArrayCopyUpToFirstDigitFour.java:19) [classes/:?]
+	at ru.medwedSa.Java_3.Lessen_6_log_test.HomeWork.LoggingLog4j.main(LoggingLog4j.java:20) [classes/:?]
