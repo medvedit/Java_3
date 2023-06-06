@@ -77,12 +77,12 @@ public class ReflectionTester {
                                          // из list в методы.
 
             try {
-                nameMethod.invoke(null); // И запускаем по-очереди каждый из методов. Так как в данном примере методы
-                // запускаются static, то на invoke передаем null. Если бы методы были не static, а метод start
-                // принимал бы объект, а не класс, в invoke передавался бы объект вместо null. Либо можно так же
-                // передавать в метод start метод, но тогда нужно было делать constructor и constructor.newInstance()
-                // а это -> Reflection (строка 22 и 23) и также передавать в invoke объект, а не null.
-                // Все это можно послушать на Java_3 Lessen_7 самое начало урока.
+                nameMethod.invoke(null); /* И запускаем по-очереди каждый из методов. Так как в данном примере
+                * методы запускаются static, то на invoke передаем null. Если бы методы были не static, а метод start
+                * принимал бы объект, а не класс, в invoke передавался бы объект вместо null. Либо можно так же
+                * передавать в метод start метод, но тогда нужно было делать constructor и constructor.newInstance()
+                * а это -> Reflection (строка 22 и 23) и также передавать в invoke объект, а не null.
+                * Все это можно послушать на Java_3 Lessen_7 самое начало урока. */
             } catch (IllegalAccessException e) { // Возможные исключения.
                 throw new RuntimeException("запрещен доступ к классу");
             } catch (InvocationTargetException e) { // Возможные исключения.
