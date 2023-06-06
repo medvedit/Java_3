@@ -29,26 +29,28 @@ public class ReflectionTester {
         Method[] methods = classMethod.getDeclaredMethods(); // Достаем все методы в массив.
         List<Method> list = new ArrayList<>(); // Создаем список методов из которого они будут вызывать в необходимом
         // порядке. Порядок вызова методов согласно приоритетам (по условию задания).
-        for (Method o : methods) { // Идем по массиву методов, и ...
-            if (o.isAnnotationPresent(Test.class)) { // Если метод имеет аннотацию Test, то ...
-                int priority = o.getAnnotation(Test.class).priority(); // Создали переменную для
+        for (Method method : methods) { // Идем по массиву методов, и ...
+            if (method.isAnnotationPresent(Test.class)) { // Если метод имеет аннотацию Test, то ...
+                int priority = method.getAnnotation(Test.class).priority(); // Создали переменную для
                                                                                      // хранения приоритетов.
                 if (priority < 1 || priority > 10) { // Если приоритет выпадает из диапазона приоритетов по заданию, то
                     throw new RuntimeException("Исключение приоритета"); // Исключение.
                 }
-                list.add(o); // иначе добавляем метод в созванный список list.
-            } else if (o.isAnnotationPresent(BeforeSuite.class)) { // Если метод имеет аннотацию
+                list.add(method); // иначе добавляем метод в созванный список list.
+            } else if (method.isAnnotationPresent(BeforeSuite.class)) { // Если метод имеет аннотацию
                                                                                   // BeforeSuite, то ...
                 if (before != null) { // Если при этом метод с аннотацией BeforeSuite уже есть в нашем списке list, то
-                    throw new RuntimeException("Метод BeforeSuite передается на выполнение более одного раза!!!"); // Выбрасываем исключение.
+                    throw new RuntimeException("Метод BeforeSuite передается на выполнение более одного раза!!!");
+                                                                                            // Выбрасываем исключение.
                 }
-                before = o; // Иначе в переменную before закидываем ссылку на метод с аннотацией BeforeSuite.
-            } else if (o.isAnnotationPresent(AfterSuite.class)) { // Если метод имеет аннотацию
+                before = method; // Иначе в переменную before закидываем ссылку на метод с аннотацией BeforeSuite.
+            } else if (method.isAnnotationPresent(AfterSuite.class)) { // Если метод имеет аннотацию
                                                                                 // AfterSuite, то ...
                 if (after != null) {  // Если при этом метод с аннотацией AfterSuite уже есть в нашем списке list, то
-                    throw new RuntimeException("Метод AfterSuite передается на выполнение более одного раза!!!"); // Выбрасываем исключение.
+                    throw new RuntimeException("Метод AfterSuite передается на выполнение более одного раза!!!");
+                                                                                            // Выбрасываем исключение.
                 }
-                after = o; // Иначе в переменную before закидываем ссылку на метод с аннотацией AfterSuite.
+                after = method; // Иначе в переменную before закидываем ссылку на метод с аннотацией AfterSuite.
             }
         }
 
@@ -71,10 +73,11 @@ public class ReflectionTester {
             list.add(after); // Добавляем ее в конец списка. Метод выполнится последним.
         }
 
-        for (Method o : list) { // Проходим по сформированному списку, преобразовывая названия методов из list в методы
+        for (Method nameMethod : list) { // Проходим по сформированному списку, преобразовывая названия методов
+                                         // из list в методы.
 
             try {
-                o.invoke(null); // И запускаем по-очереди каждый из методов. Так как в данном примере методы
+                nameMethod.invoke(null); // И запускаем по-очереди каждый из методов. Так как в данном примере методы
                 // запускаются static, то на invoke передаем null. Если бы методы были не static, а метод start
                 // принимал бы объект, а не класс, в invoke передавался бы объект вместо null. Либо можно так же
                 // передавать в метод start метод, но тогда нужно было делать constructor и constructor.newInstance()
