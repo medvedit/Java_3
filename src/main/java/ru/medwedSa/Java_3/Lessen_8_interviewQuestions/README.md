@@ -60,6 +60,7 @@
       >>Пример применения интерфейсов:
       >>
       >>public class Example {
+      >>
       >>     static public final String str = "23"; /* Класс хронящий в себе значение строки. */
       >>}
       >>
@@ -67,24 +68,28 @@
       >>/* реализующем их классе),можно использовать ключевое слово default */
       >>
       >>public interface Child1 {
+      >>
       >>     default char method1() {
       >>         return Example.str.charAt(0); /* Возвращяем значение первого инднкса переменной str */
       >>     }
       >>}
       >>
       >>public interface Child2 {
+      >>
       >>     default char method2() {
       >>         return Example.str.charAt(1); /* Возвращяем значение второго инднкса переменной str */
       >>     }
       >>}
       >>
-      >>public class MixIn implements Child1, Child2 { /* Класс наследуемый интерфейсы Child1 и Child2. */
+      >>public class method3 implements Child1, Child2 { /* Класс наследуемый интерфейсы Child1 и Child2. */
       >>
       >>}
       >>
       >>public class Main {
       >>    public static void main(String[] args) {
-      >>        MixIn mixIn = new MixIn(); /* Создание переменной от класса MixIn. */
+      >>
+      >>        method3 mixIn = new method3(); /* Создание переменной от класса MixIn. */
+      >>
       >>        System.out.println(mixIn.method1()); /* Запуск метода прописанного в интерфейсе Child1 */
       >>        System.out.println(mixIn.method2()); /* Запуск метода прописанного в интерфейсе Child2 */
       >>    }
