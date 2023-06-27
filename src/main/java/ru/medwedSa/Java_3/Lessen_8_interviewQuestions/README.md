@@ -35,6 +35,15 @@
 + [В чем разница между String, StringBuffer, String Builder?](#21-в-чем-разница-между-string-stringbuffer-string-builder)
 + [Может ли метод быть одновременно abstract и final?](#22-может-ли-метод-быть-одновременно-abstract-и-final)
 # Коллекции:
++ [Что такое ArrayList и LinkedList, какая между ними разница?](#1-что-такое-arraylist-и-linkedlist-какая-между-ними-разница)
++ [Что такое Set, HashSet, LinkedHashSet, TreeSet, и в чем между ними разница?](#2-что-такое-set-hashset-linkedhashset-treeset-и-в-чем-между-ними-разница)
++ [В чем разница между Hashtable и HashMap?](#3-в-чем-разница-между-hashtable-и-hashmap)
++ [В чем разница между ArrayList и Vector?](#4-в-чем-разница-между-arraylist-и-vector)
++ [Существуют ли какие-нибудь требованию к объектам, используемым в качестве ключа в HashMap?](#5-существуют-ли-какие-нибудь-требованию-к-объектам-используемым-в-качестве-ключа-в-hashmap)
++ [Что такое loadFactor и initialCapactity в HashMap?](#6-что-такое-loadfactor-и-initialcapactity-в-hashmap)
++ [Что такое Iterator, чем он отличается от Listiterator?](#7-что-такое-iterator-чем-он-отличается-от-listiterator)
++ [Чем Array отличается от ArrayList?](#8-чем-array-отличается-от-arraylist)
++ [Что такое HashCode()?](#9-что-такое-hashcode)
 # Основы:
 ### 1. Что такое ЈѴM, JDK, JRE? В чем отличия?
    * > JVM - Java Virtual Machine. Платформа зависимая, работает на определенной платформе, запускает приложения 
@@ -504,7 +513,7 @@ Reflection до этого поля "не добраться".
      использовать как [двусторонняя очередь (Double-ended queue), или дек (Deque)](https://tproger.ru/translations/stacks-and-queues-for-beginners/).
    >
 [Содержание](#коллекции)
-### 2. Что такое Set, HashSet, LinkedHashSet, TreeSet, и в чем между ними разница? 
+### 2. Что такое Set, HashSet, LinkedHashSet, TreeSet, и в чем между ними разница?
 * > * `Set` - интерфейс наследуется от интерфейса Collection. Этот интерфейс описывает, как должен работать `Set`, 
      оно же множество. `Set` не допускает дублирования элементов.
 * > * `HashSet` - реализует интерфейс Set и создает коллекцию, которая хранит элементы в хеш-таблице. `HashSet` 
@@ -534,7 +543,7 @@ Reflection до этого поля "не добраться".
        естественный порядок TreeSet, используя интерфейсы Comparable или Comparator. Кратко [тут...](https://programmera.ru/uroki-po-java/treeset-v-Java/)
    >
 [Содержание](#коллекции)
-### 3. В чем разница между Hashtable и HashMap? 
+### 3. В чем разница между Hashtable и HashMap?
 * > * `Hashtable и HashMap очень похожи` — обе коллекции реализуют интерфейс Map и используют в своей работе 
       коллекцию хеш таблицы.  
       **Различия между Hashtable и HashMap:**  
@@ -549,7 +558,7 @@ Reflection до этого поля "не добраться".
        — отличная замена Hashtable. Мы должны рассмотреть ConcurrentHashMap для использования в приложениях с 
        несколькими потоками.  
        Почитать [тут...](https://for-each.dev/lessons/b/-hashmap-hashtable-differences)
-### 4. В чем разница между ArrayList и Vector? 
+### 4. В чем разница между ArrayList и Vector?
 * > * Оба ArrayList а также Vector представляют собой реализации массива с изменяемым размером List интерфейс. 
       ArrayList примерно эквивалентно Vector и имеют много общего. Подробнее почитать [тут...](https://www.techiedelight.com/ru/arraylist-vs-vector-java/#:~:text=Основное%20различие%20между%20ArrayList%20а,могут%20работать%20над%20ArrayList%20одновременно.)  
       **Различия ArrayList и Vector:**  
@@ -570,7 +579,7 @@ Reflection до этого поля "не добраться".
       Не требование, но лучше использовать в качестве ключей иммутабельные объекты - такие, как обертки примитивов или 
       String для того, что бы в процессе работы данных в коде, ключ не менял своего значения -> не менялся HashCode -> 
       не "терялась" ячейка/бакет с сохранёнными ранее данными в HashMap.
-### 6. Что такое loadFactor и initialCapactity в HashMap? 
+### 6. Что такое loadFactor и initialCapactity в HashMap?
 * > * Каждый экземпляр класса java.util.HashMap имеет `два параметра` для настройки `производительности` - 
       `начальная емкость (initial capacity)` и `фактор загрузки (load factor)`. Емкость хеш-таблицы - это количество бакетов 
       в ней, а начальная емкость - это то количество бакетов, с которым хеш-таблица создается. Фактор загрузки 
@@ -581,7 +590,7 @@ Reflection до этого поля "не добраться".
       Это все легко посмотреть по исходникам. Степень двойки для емкости хеш-таблица позволяет некоторые оптимизации, 
       которые положительно влияют на производительность хеш-таблицы. Когда `фактор загрузки превышен`, то хеш-таблица 
       автоматически `увеличивает свою емкость вдвое`.
-### 7. Что такое Iterator, чем он отличается от Listiterator? 
+### 7. Что такое Iterator, чем он отличается от Listiterator?
 * > * `Iterator` а также `ListIterator` два важных интерфейса Java Collection Framework, где ListIterator расширяет 
       Iterator и предоставляет дополнительные возможности по сравнению с Iterator.  
     **Основное различие между Iterator а также ListIterator:**  
@@ -594,7 +603,7 @@ Reflection до этого поля "не добраться".
       nextIndex() а также previousIndex(), соответственно.  
       Дополнительно читать [тут...](https://www.techiedelight.com/ru/difference-between-iterator-listiterator-java/#:~:text=Основное%20различие%20между%20Iterator%20а,по%20списку%20в%20любом%20направлении.)
       и [тут...](https://proglang.su/java/iterator-and-listiterator)
-### 8. Чем Array отличается от ArrayList? 
+### 8. Чем Array отличается от ArrayList?
 * > 1) **Размер:** `Array` в Java имеет фиксированный размер, а у `ArrayList` динамический.  
    >2) **Хранящиеся данные** `Array` в Java могут содержаться примитивные типы данных (int, char, short, long, float, 
       double, boolean) так и объекты (Integer, Character, Long, Float, Double, Boolean, String, так далее.) `ArrayList`
@@ -616,7 +625,7 @@ Reflection до этого поля "не добраться".
       переопределять.  
       Подробнее [тут...](https://ru.hexlet.io/qna/java/questions/kak-vychislyaetsya-hashcode-java#:~:text=Hashcode%20в%20Java%20вычисляется%20с,Реализация%20алгоритма%20зависит%20от%20JVM.) 
 # Исключения: 
-### 1. Что означает каждое из ключевых слов: try, catch, finally, throw, throws? 
+### 1. Что означает каждое из ключевых слов: try, catch, finally, throw, throws?
 * >  1) `try` - блок кода в который поменяются операторы для отслеживания/возникновения в них исключений. Если 
       исключение произошло, то оно создаётся и передаётся дальше. 
     >2) `catch` - блок кода, который перехватывает возникшие в try исключения, и обрабатывает эти исключения.
